@@ -18,11 +18,11 @@ public class LojaEntidade implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@Column(name = "id")
-	private long id;
-	public long getId() {
+	private Long id;
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
