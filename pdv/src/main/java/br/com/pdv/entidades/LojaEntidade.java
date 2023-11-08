@@ -25,5 +25,16 @@ public class LojaEntidade implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
+	@Column(name = "nome")
+	private String nome;
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setINome(String nome) {
+		this.nome = nome;
+	}
 
 }

@@ -13,7 +13,7 @@ public class LojaController {
 	@Autowired
 	private LojasRepository lojasRepository;
 	
-	@GetMapping({"/lojas"})
+	@GetMapping({"/"})
 	public String home(ModelMap model) {
 		model.addAttribute("lojas", lojasRepository.findAll());
 		return "lojas";
