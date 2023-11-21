@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="br">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeLeaf.org"
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Produtos</title>
+</head>
+</html>
+<body>
+   Cadastro Produtos
+   <table class="table table-sm table table-striped table-hover table-bordered">
+	  					<thead>
+							 <tr>
+								 <th>ID</th>
+								 <th>Primeiro Nome</th>
+							 </tr> 
+						</thead> 
+						<tbody>
+							<tr th:each="produto: ${produtos}" >
+								<td th:text="${produto.Id}"></td>
+								<td th:text="${produto.Nome}"></td>
+							</tr>
+						</tbody>
+   </table>
+</body>
