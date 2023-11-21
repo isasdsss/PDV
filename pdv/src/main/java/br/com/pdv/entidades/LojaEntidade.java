@@ -36,5 +36,6 @@ public class LojaEntidade implements Serializable {
 	public void setINome(String nome) {
 		this.nome = nome;
 	}
+	
 
 }
