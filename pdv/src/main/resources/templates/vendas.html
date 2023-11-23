@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="br">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeLeaf.org"
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Lojas Isa</title>
+</head>
+</html>
+<body>
+   Cadastro Vendas
+   <table class="table table-sm table table-striped table-hover table-bordered">
+	  					<thead>
+							 <tr>
+								 <th>ID</th>
+								 <th>Quantidades de vendas</th>
+							 </tr> 
+						</thead> 
+						<tbody>
+							<tr th:each="venda: ${vendas}" >
+								<td th:text="${venda.Id}"></td>
+								<td th:text="${venda.Quant}"></td>
+							</tr>
+						</tbody>
+   </table>
+</body>

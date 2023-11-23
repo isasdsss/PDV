@@ -39,5 +39,15 @@ public class ProdutoEntidade implements Serializable {
 		this.nome = nome;
 	}
 	
+	@Column(name = "preco")
+	private Float preco;
+	
+	public Float getpreco() {
+		return preco;
+	}
+	
+	public void setpreco(Float preco) {
+		this.preco = preco;
+	}
 }
 
